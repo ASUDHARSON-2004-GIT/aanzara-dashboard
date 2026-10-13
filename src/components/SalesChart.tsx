@@ -87,6 +87,14 @@ export default function SalesChart({ data }: { data: SalesOverview }) {
               width={44}
               tick={{ fontSize: 12, fill: "#6b7280" }}
             />
+            <YAxis
+              yAxisId="orders"
+              orientation="right"
+              tickLine={false}
+              axisLine={false}
+              width={36}
+              tick={{ fontSize: 12, fill: "#6b7280" }}
+            />
 
             <Tooltip
               labelFormatter={(label) => formatShortDate(String(label))}
