@@ -1,0 +1,37 @@
+[
+  {
+    "id": "AZ1248",
+    "customer": "Priya Sharma",
+    "placedAt": "2026-10-15",
+    "amount": 2499,
+    "status": "delivered"
+  },
+  {
+    "id": "AZ1247",
+    "customer": "Rahul Kumar",
+    "placedAt": "2026-10-15",
+    "amount": 1299,
+    "status": "processing"
+  },
+  {
+    "id": "AZ1246",
+    "customer": "Sneha R",
+    "placedAt": "2026-10-14",
+    "amount": 3199,
+    "status": "shipped"
+  },
+  {
+    "id": "AZ1245",
+    "customer": "Arjun N",
+    "placedAt": "2026-10-14",
+    "amount": 799,
+    "status": "cancelled"
+  },
+  {
+    "id": "AZ1244",
+    "customer": "Meena K",
+    "placedAt": "2026-10-13",
+    "amount": 1599,
+    "status": "delivered"
+  }
+]

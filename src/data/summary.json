@@ -1,0 +1,23 @@
+{
+  "range": {
+    "from": "2026-10-01",
+    "to": "2026-10-15"
+  },
+  "comparisonLabel": "vs last month",
+  "totalOrders": {
+    "value": 1248,
+    "changePercent": 12
+  },
+  "totalRevenue": {
+    "value": 428560,
+    "changePercent": 8
+  },
+  "totalProducts": {
+    "value": 3482,
+    "changePercent": 5
+  },
+  "totalCustomers": {
+    "value": 2156,
+    "changePercent": 10
+  }
+}

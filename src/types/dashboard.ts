@@ -1,5 +1,3 @@
-
-
 export type TrendDirection = "up" | "down";
 
 export interface StatMetric {
@@ -11,6 +9,8 @@ export interface StatMetric {
 
 export interface DashboardSummary {
   range: { from: string; to: string }; // ISO dates: "2026-10-01"
+  /** What changePercent is measured against, shown under every stat card. */
+  comparisonLabel: string; // "vs last month"
   totalOrders: StatMetric;
   totalRevenue: StatMetric;
   totalProducts: StatMetric;
@@ -57,4 +57,16 @@ export interface LowStockProduct {
   name: string;
   unitsLeft: number;
   imageUrl?: string;
+}
+
+/** The signed-in admin, shown in the welcome heading and the top bar. */
+export interface CurrentUser {
+  name: string; // "Sudharson A"
+  role: string; // "Admin"
+  /** Optional photo. When missing, the UI shows initials built from the name. */
+  avatarUrl?: string;
+}
+
+export interface NotificationSummary {
+  unreadCount: number;
 }

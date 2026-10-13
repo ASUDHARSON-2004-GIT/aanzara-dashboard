@@ -1,0 +1,18 @@
+[
+  {
+    "status": "delivered",
+    "count": 849
+  },
+  {
+    "status": "processing",
+    "count": 225
+  },
+  {
+    "status": "shipped",
+    "count": 100
+  },
+  {
+    "status": "cancelled",
+    "count": 74
+  }
+]
