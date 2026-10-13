@@ -7,6 +7,9 @@ import {
   UserRound, ChevronRight, Menu, X
 } from "lucide-react";
 
+import logo from "public/aanzara-logo.png";
+import Image from "next/image";
+
 const navigation = [
   { label: "Dashboard", icon: Home },
   { label: "Catalog", icon: Package, expandable: true },
@@ -51,14 +54,15 @@ export default function Sidebar() {
           ${open ? "translate-x-0" : "-translate-x-full"}
           lg:translate-x-0`}
       >
-        <div className="border-b border-white/10 px-6 py-7">
+        <div className="flex items-center gap-3 border-b border-white/10 px-6 py-6">
+          <Image src="/aanzara-logo.png" alt="" width={48} height={48} priority className="size-12 shrink-0" />
+          <div>
           <h1 className="text-2xl font-extrabold tracking-wide">
-            🛍 AANZARA
+            AAN<span className="text-[#ff6b1a]">ZARA</span>
           </h1>
-          <p className="pl-10 text-[10px] tracking-[0.25em] text-gray-400">
-            STYLE YOUR WORLD
-          </p>
+          <p className="text-[10px] tracking-[0.25em] text-gray-400">STYLE YOUR WORLD</p>
         </div>
+      </div>
 
         <nav className="flex-1 space-y-1 overflow-y-auto px-4 py-5">
           {navigation.map(({ label, icon: Icon, expandable }) => (
