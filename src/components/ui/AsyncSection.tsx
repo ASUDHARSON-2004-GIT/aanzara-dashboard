@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { unstable_rethrow } from "next/navigation";
 import SectionError from "./SectionError";
 
 interface AsyncSectionProps<T> {
@@ -21,8 +20,6 @@ export default async function AsyncSection<T>({ load, title, children }: AsyncSe
   try {
     data = await load();
   } catch (error) {
-    // Let Next.js handle its own internal control-flow errors.
-    unstable_rethrow(error);
     console.error(`[dashboard] failed to load ${title}`, error);
     return <SectionError title={title} />;
   }
