@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Eye } from "lucide-react";
 import { formatCurrency, formatDate } from "@/lib/format";
 import type { RecentOrder } from "@/types/dashboard";
@@ -39,13 +40,13 @@ export default function RecentOrders({ orders }: { orders: RecentOrder[] }) {
                   <StatusBadge status={order.status} />
                 </td>
                 <td className="px-2.5 py-3 text-center">
-                  <a
+                  <Link
                     href={`/orders/${order.id}`}
                     aria-label={`View order ${order.id}`}
                     className="inline-flex rounded-lg border border-gray-200 p-2 text-gray-600 hover:bg-gray-50"
                   >
                     <Eye size={16} />
-                  </a>
+                  </Link>
                 </td>
               </tr>
             ))}

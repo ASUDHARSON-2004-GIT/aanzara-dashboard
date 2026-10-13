@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p1",
+    "name": "Women's Handbag",
+    "unitsSold": 245,
+    "stockStatus": "in_stock"
+  },
+  {
+    "id": "p2",
+    "name": "Men's Sports Shoes",
+    "unitsSold": 198,
+    "stockStatus": "in_stock"
+  },
+  {
+    "id": "p3",
+    "name": "Classic Watch",
+    "unitsSold": 176,
+    "stockStatus": "low_stock"
+  },
+  {
+    "id": "p4",
+    "name": "Wireless Headphones",
+    "unitsSold": 142,
+    "stockStatus": "in_stock"
+  },
+  {
+    "id": "p5",
+    "name": "Sunglasses",
+    "unitsSold": 128,
+    "stockStatus": "low_stock"
+  }
+]

@@ -21,6 +21,7 @@ export default function StatsGrid({ summary }: { summary: DashboardSummary }) {
           title={title}
           value={format(metric.value)}
           changePercent={metric.changePercent}
+          comparisonLabel={summary.comparisonLabel}
           icon={icon}
           tone={tone}
         />

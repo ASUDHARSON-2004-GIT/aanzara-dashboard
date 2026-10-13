@@ -5,12 +5,21 @@ interface StatCardProps {
   title: string;
   value: string; // already formatted
   changePercent: number;
+  /** What the change is compared against, e.g. "vs last month". Comes from the API. */
+  comparisonLabel: string;
   icon: LucideIcon;
   /** Tailwind classes for the icon tile, e.g. "bg-orange-100 text-orange-600" */
   tone: string;
 }
 
-export default function StatCard({ title, value, changePercent, icon: Icon, tone }: StatCardProps) {
+export default function StatCard({
+  title,
+  value,
+  changePercent,
+  comparisonLabel,
+  icon: Icon,
+  tone,
+}: StatCardProps) {
   const isUp = changePercent >= 0;
   const TrendIcon = isUp ? TrendingUp : TrendingDown;
 
@@ -31,7 +40,7 @@ export default function StatCard({ title, value, changePercent, icon: Icon, tone
             {Math.abs(changePercent)}%
           </span>
         </div>
-        <p className="mt-1 text-xs text-gray-400">vs last month</p>
+        <p className="mt-1 text-xs text-gray-400">{comparisonLabel}</p>
       </div>
     </article>
   );
