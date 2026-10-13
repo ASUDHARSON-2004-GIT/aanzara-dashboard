@@ -63,7 +63,7 @@ export default function Topbar() {
             className="flex items-center gap-2"
           >
             <div className="hidden text-right sm:block">
-              <p className="text-sm font-semibold">Sujith S</p>
+              <p className="text-sm font-semibold">Sudharson A</p>
               <p className="text-xs text-gray-500">Admin</p>
             </div>
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-orange-100 font-semibold text-orange-700">

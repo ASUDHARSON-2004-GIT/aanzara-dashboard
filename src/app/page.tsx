@@ -38,7 +38,7 @@ export default function DashboardPage() {
           <section className="flex flex-wrap items-center justify-between gap-4">
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
-                Welcome Back, Sujith! 👋
+                Welcome Back, Sudharson! 👋
               </h2>
               <p className="mt-1 text-sm text-gray-500 sm:text-base">
                 Here&apos;s what&apos;s happening with your store today.
