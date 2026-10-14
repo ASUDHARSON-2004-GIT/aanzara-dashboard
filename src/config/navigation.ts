@@ -56,15 +56,23 @@ const otherPlannedPages = [
 ];
 
 const orderDetailPath = /^\/orders\/([^/]+)$/;
+const productDetailPath = /^\/catalog\/products\/([^/]+)$/;
+
+/** Pages that now have a real folder under src/app/(admin)/, so they skip the placeholder. */
+const builtPaths = new Set(["/catalog"]);
 
 /** Every path that shows a placeholder, used to pre-build those pages. */
 export const plannedPaths: string[] = [
-  ...navigation.filter((item) => item.href !== "/").map((item) => item.href),
+  ...navigation
+    .filter((item) => item.href !== "/" && !builtPaths.has(item.href))
+    .map((item) => item.href),
   ...otherPlannedPages.map((page) => page.href),
 ];
 
 /** Returns the placeholder title for a path, or null when the path is unknown (404). */
 export function getPlannedPage(path: string): { title: string } | null {
+  if (builtPaths.has(path)) return null;
+
   const navMatch = navigation.find((item) => item.href === path);
   if (navMatch) return { title: navMatch.label };
 
@@ -73,6 +81,9 @@ export function getPlannedPage(path: string): { title: string } | null {
 
   const orderMatch = orderDetailPath.exec(path);
   if (orderMatch) return { title: `Order ${decodeURIComponent(orderMatch[1])}` };
+
+  const productMatch = productDetailPath.exec(path);
+  if (productMatch) return { title: `Product ${decodeURIComponent(productMatch[1])}` };
 
   return null;
 }

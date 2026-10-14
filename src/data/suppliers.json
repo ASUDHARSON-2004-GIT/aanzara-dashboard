@@ -1,0 +1,20 @@
+[
+  {
+    "id": "s1",
+    "name": "Metro Leather Works",
+    "city": "Kanpur",
+    "contact": "+91 98765 43210"
+  },
+  {
+    "id": "s2",
+    "name": "Sonic Electronics Pvt Ltd",
+    "city": "Noida",
+    "contact": "+91 98111 22334"
+  },
+  {
+    "id": "s3",
+    "name": "Southern Textiles",
+    "city": "Tiruppur",
+    "contact": "+91 94433 55667"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "productId": "p1",
+    "warehouseId": "w1",
+    "onHand": 4,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p1",
+    "warehouseId": "w2",
+    "onHand": 2,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p2",
+    "warehouseId": "w1",
+    "onHand": 5,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p2",
+    "warehouseId": "w2",
+    "onHand": 3,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p3",
+    "warehouseId": "w1",
+    "onHand": 3,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p3",
+    "warehouseId": "w2",
+    "onHand": 1,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p4",
+    "warehouseId": "w1",
+    "onHand": 3,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p4",
+    "warehouseId": "w2",
+    "onHand": 2,
+    "reserved": 2,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p5",
+    "warehouseId": "w1",
+    "onHand": 4,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p5",
+    "warehouseId": "w2",
+    "onHand": 3,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p6",
+    "warehouseId": "w1",
+    "onHand": 61,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p6",
+    "warehouseId": "w2",
+    "onHand": 32,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p7",
+    "warehouseId": "w1",
+    "onHand": 44,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p7",
+    "warehouseId": "w2",
+    "onHand": 22,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p8",
+    "warehouseId": "w1",
+    "onHand": 47,
+    "reserved": 2,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p8",
+    "warehouseId": "w2",
+    "onHand": 50,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p9",
+    "warehouseId": "w1",
+    "onHand": 66,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p9",
+    "warehouseId": "w2",
+    "onHand": 35,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p10",
+    "warehouseId": "w1",
+    "onHand": 67,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p10",
+    "warehouseId": "w2",
+    "onHand": 15,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p11",
+    "warehouseId": "w1",
+    "onHand": 28,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p11",
+    "warehouseId": "w2",
+    "onHand": 11,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p12",
+    "warehouseId": "w1",
+    "onHand": 61,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p12",
+    "warehouseId": "w2",
+    "onHand": 19,
+    "reserved": 2,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p13",
+    "warehouseId": "w1",
+    "onHand": 29,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p13",
+    "warehouseId": "w2",
+    "onHand": 45,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p14",
+    "warehouseId": "w1",
+    "onHand": 20,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p14",
+    "warehouseId": "w2",
+    "onHand": 16,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p15",
+    "warehouseId": "w1",
+    "onHand": 32,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p15",
+    "warehouseId": "w2",
+    "onHand": 23,
+    "reserved": 2,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p16",
+    "warehouseId": "w1",
+    "onHand": 33,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p16",
+    "warehouseId": "w2",
+    "onHand": 28,
+    "reserved": 2,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p17",
+    "warehouseId": "w1",
+    "onHand": 36,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p17",
+    "warehouseId": "w2",
+    "onHand": 44,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p18",
+    "warehouseId": "w1",
+    "onHand": 23,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p18",
+    "warehouseId": "w2",
+    "onHand": 32,
+    "reserved": 3,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p19",
+    "warehouseId": "w1",
+    "onHand": 52,
+    "reserved": 1,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p19",
+    "warehouseId": "w2",
+    "onHand": 18,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p20",
+    "warehouseId": "w1",
+    "onHand": 0,
+    "reserved": 0,
+    "reorderLevel": 10
+  },
+  {
+    "productId": "p20",
+    "warehouseId": "w2",
+    "onHand": 0,
+    "reserved": 0,
+    "reorderLevel": 10
+  }
+]

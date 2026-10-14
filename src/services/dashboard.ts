@@ -11,14 +11,6 @@ import type {
   TopProduct,
 } from "@/types/dashboard";
 
-/**
- * The ONLY place that knows endpoint URLs.
- * Components call these functions and never touch fetch directly.
- *
- * Functions that more than one panel needs are wrapped in React's cache():
- * during one page render they run once and every caller shares the result,
- * so the backend is not asked for the same thing twice.
- */
 export const getDashboardSummary = cache(() =>
   apiGet<DashboardSummary>("/dashboard/summary"),
 );

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "n1",
+    "title": "New order AZ1248",
+    "message": "Priya Sharma placed an order of ₹2,499",
+    "type": "order",
+    "createdAt": "2026-10-14T09:30:00+05:30",
+    "read": false
+  },
+  {
+    "id": "n2",
+    "title": "Low stock alert",
+    "message": "Classic Watch has only 4 units left",
+    "type": "inventory",
+    "createdAt": "2026-10-14T08:10:00+05:30",
+    "read": false
+  },
+  {
+    "id": "n3",
+    "title": "Order cancelled",
+    "message": "AZ1245 was cancelled by the customer",
+    "type": "order",
+    "createdAt": "2026-10-13T18:45:00+05:30",
+    "read": false
+  },
+  {
+    "id": "n4",
+    "title": "Low stock alert",
+    "message": "Wireless Headphones has only 5 units left",
+    "type": "inventory",
+    "createdAt": "2026-10-13T12:00:00+05:30",
+    "read": false
+  },
+  {
+    "id": "n5",
+    "title": "Coupon scheduled",
+    "message": "DIWALI15 goes live on 25 Oct",
+    "type": "offer",
+    "createdAt": "2026-10-12T10:00:00+05:30",
+    "read": false
+  },
+  {
+    "id": "n6",
+    "title": "New customer",
+    "message": "Nisha Patel registered an account",
+    "type": "customer",
+    "createdAt": "2026-10-10T14:20:00+05:30",
+    "read": true
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "u1",
+    "name": "Sudharson A",
+    "email": "sudharson@aanzara.com",
+    "roleId": "r1",
+    "status": "active",
+    "lastLogin": "2026-10-14T09:12:00+05:30"
+  },
+  {
+    "id": "u2",
+    "name": "Anita Rao",
+    "email": "anita@aanzara.com",
+    "roleId": "r2",
+    "status": "active",
+    "lastLogin": "2026-10-14T08:40:00+05:30"
+  },
+  {
+    "id": "u3",
+    "name": "Manoj Kumar",
+    "email": "manoj@aanzara.com",
+    "roleId": "r2",
+    "status": "active",
+    "lastLogin": "2026-10-13T17:05:00+05:30"
+  },
+  {
+    "id": "u4",
+    "name": "Deepa S",
+    "email": "deepa@aanzara.com",
+    "roleId": "r3",
+    "status": "active",
+    "lastLogin": "2026-10-12T11:30:00+05:30"
+  },
+  {
+    "id": "u5",
+    "name": "Imran Khan",
+    "email": "imran@aanzara.com",
+    "roleId": "r3",
+    "status": "inactive",
+    "lastLogin": "2026-09-20T15:45:00+05:30"
+  }
+]
