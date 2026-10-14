@@ -1,0 +1,16 @@
+[
+  {
+    "id": "w1",
+    "name": "Chennai Main Warehouse",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "capacity": 5000
+  },
+  {
+    "id": "w2",
+    "name": "Bengaluru Hub",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "capacity": 3000
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "c1",
+    "name": "Bags",
+    "slug": "bags",
+    "productCount": 2
+  },
+  {
+    "id": "c2",
+    "name": "Footwear",
+    "slug": "footwear",
+    "productCount": 3
+  },
+  {
+    "id": "c3",
+    "name": "Watches",
+    "slug": "watches",
+    "productCount": 2
+  },
+  {
+    "id": "c4",
+    "name": "Electronics",
+    "slug": "electronics",
+    "productCount": 3
+  },
+  {
+    "id": "c5",
+    "name": "Eyewear",
+    "slug": "eyewear",
+    "productCount": 2
+  },
+  {
+    "id": "c6",
+    "name": "Clothing",
+    "slug": "clothing",
+    "productCount": 3
+  },
+  {
+    "id": "c7",
+    "name": "Accessories",
+    "slug": "accessories",
+    "productCount": 3
+  },
+  {
+    "id": "c8",
+    "name": "Home & Living",
+    "slug": "home-living",
+    "productCount": 2
+  }
+]

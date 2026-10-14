@@ -1,0 +1,102 @@
+[
+  {
+    "id": "sm1",
+    "productId": "p1",
+    "warehouseId": "w1",
+    "type": "out",
+    "quantity": 12,
+    "reason": "Order fulfilment",
+    "date": "2026-10-12",
+    "by": "Sudharson A"
+  },
+  {
+    "id": "sm2",
+    "productId": "p3",
+    "warehouseId": "w1",
+    "type": "out",
+    "quantity": 9,
+    "reason": "Order fulfilment",
+    "date": "2026-10-11",
+    "by": "Sudharson A"
+  },
+  {
+    "id": "sm3",
+    "productId": "p4",
+    "warehouseId": "w2",
+    "type": "out",
+    "quantity": 7,
+    "reason": "Order fulfilment",
+    "date": "2026-10-11",
+    "by": "Anita Rao"
+  },
+  {
+    "id": "sm4",
+    "productId": "p9",
+    "warehouseId": "w1",
+    "type": "in",
+    "quantity": 40,
+    "reason": "Purchase order PO-2041",
+    "date": "2026-10-09",
+    "by": "Anita Rao"
+  },
+  {
+    "id": "sm5",
+    "productId": "p13",
+    "warehouseId": "w2",
+    "type": "in",
+    "quantity": 30,
+    "reason": "Purchase order PO-2042",
+    "date": "2026-10-08",
+    "by": "Anita Rao"
+  },
+  {
+    "id": "sm6",
+    "productId": "p2",
+    "warehouseId": "w1",
+    "type": "transfer",
+    "quantity": 5,
+    "reason": "Transfer to Bengaluru Hub",
+    "date": "2026-10-07",
+    "by": "Sudharson A"
+  },
+  {
+    "id": "sm7",
+    "productId": "p5",
+    "warehouseId": "w2",
+    "type": "adjust",
+    "quantity": -2,
+    "reason": "Damaged in storage",
+    "date": "2026-10-06",
+    "by": "Anita Rao"
+  },
+  {
+    "id": "sm8",
+    "productId": "p10",
+    "warehouseId": "w1",
+    "type": "in",
+    "quantity": 25,
+    "reason": "Purchase order PO-2039",
+    "date": "2026-10-03",
+    "by": "Sudharson A"
+  },
+  {
+    "id": "sm9",
+    "productId": "p18",
+    "warehouseId": "w2",
+    "type": "out",
+    "quantity": 10,
+    "reason": "Order fulfilment",
+    "date": "2026-10-02",
+    "by": "Anita Rao"
+  },
+  {
+    "id": "sm10",
+    "productId": "p11",
+    "warehouseId": "w1",
+    "type": "in",
+    "quantity": 60,
+    "reason": "Purchase order PO-2037",
+    "date": "2026-09-28",
+    "by": "Sudharson A"
+  }
+]
