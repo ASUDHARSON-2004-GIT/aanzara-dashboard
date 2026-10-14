@@ -59,7 +59,7 @@ const orderDetailPath = /^\/orders\/([^/]+)$/;
 const productDetailPath = /^\/catalog\/products\/([^/]+)$/;
 
 /** Pages that now have a real folder under src/app/(admin)/, so they skip the placeholder. */
-const builtPaths = new Set(["/catalog"]);
+const builtPaths = new Set(["/catalog","sales"]);
 
 /** Every path that shows a placeholder, used to pre-build those pages. */
 export const plannedPaths: string[] = [

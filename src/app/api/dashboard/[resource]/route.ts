@@ -50,9 +50,5 @@ export async function GET(
     return NextResponse.json({ message: "Unknown resource" }, { status: 404 });
   }
 
-  // Simulated network latency so you can SEE the loading skeletons.
-  // Delete this line when you connect a real API.
-  await new Promise((resolve) => setTimeout(resolve, 600));
-
   return NextResponse.json(resources[resource]);
 }
