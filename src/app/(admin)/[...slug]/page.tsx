@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Card from "@/components/ui/Card";
+import { Suspense } from "react";
 import { getPlannedPage, plannedPaths } from "@/config/navigation";
 
 /**
@@ -15,8 +16,27 @@ export default async function PlaceholderPage({
   params,
 }: {
   params: Promise<{ slug: string[] }>;
+}){
+  return (
+    <Suspense
+      fallback={
+        <div className="p-6">
+          Loading page...
+        </div>
+      }
+    >
+      <SlugPageContent params={params} />
+    </Suspense>
+  );
+}
+
+async function SlugPageContent({
+  params,
+}: {
+  params: Promise<{ slug: string[] }>;
 }) {
   const { slug } = await params;
+
   const page = getPlannedPage(`/${slug.join("/")}`);
 
   if (!page) notFound();
