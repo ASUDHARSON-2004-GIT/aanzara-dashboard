@@ -50,6 +50,7 @@ const otherPlannedPages = [
   { href: "/catalog/products", title: "Products" },
   { href: "/catalog/products/new", title: "Add Product" },
   { href: "/customers/new", title: "Add Customer" },
+  { href: "/wholesale/new", title: "Add Wholesale Account" },
   { href: "/profile", title: "My Profile" },
   { href: "/store", title: "Store" },
 ];
@@ -57,9 +58,18 @@ const otherPlannedPages = [
 const orderDetailPath = /^\/orders\/([^/]+)$/;
 const productDetailPath = /^\/catalog\/products\/([^/]+)$/;
 const customerDetailPath = /^\/customers\/([^/]+)$/;
+const wholesaleDetailPath = /^\/wholesale\/([^/]+)$/;
 
 /** Pages that now have a real folder under src/app/(admin)/, so they skip the placeholder. */
-const builtPaths = new Set(["/catalog","sales","inventory","orders","customers","offers"]);
+const builtPaths = new Set([
+  "/catalog",
+  "/sales",
+  "/inventory",
+  "/orders",
+  "/customers",
+  "/offers",
+  "/wholesale",
+]);
 
 /** Every path that shows a placeholder, used to pre-build those pages. */
 export const plannedPaths: string[] = [
@@ -87,6 +97,9 @@ export function getPlannedPage(path: string): { title: string } | null {
 
   const customerMatch = customerDetailPath.exec(path);
   if (customerMatch) return { title: `Customer ${decodeURIComponent(customerMatch[1])}` };
+
+  const wholesaleMatch = wholesaleDetailPath.exec(path);
+  if (wholesaleMatch) return { title: `Wholesale Account ${decodeURIComponent(wholesaleMatch[1])}` };
 
   return null;
 }
