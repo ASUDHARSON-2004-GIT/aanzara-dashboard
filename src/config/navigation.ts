@@ -57,9 +57,10 @@ const otherPlannedPages = [
 
 const orderDetailPath = /^\/orders\/([^/]+)$/;
 const productDetailPath = /^\/catalog\/products\/([^/]+)$/;
+const customerDetailPath = /^\/customers\/([^/]+)$/;
 
 /** Pages that now have a real folder under src/app/(admin)/, so they skip the placeholder. */
-const builtPaths = new Set(["/catalog","sales","inventory","orders"]);
+const builtPaths = new Set(["/catalog","sales","inventory","orders","customers"]);
 
 /** Every path that shows a placeholder, used to pre-build those pages. */
 export const plannedPaths: string[] = [
@@ -84,6 +85,9 @@ export function getPlannedPage(path: string): { title: string } | null {
 
   const productMatch = productDetailPath.exec(path);
   if (productMatch) return { title: `Product ${decodeURIComponent(productMatch[1])}` };
+
+  const customerMatch = customerDetailPath.exec(path);
+  if (customerMatch) return { title: `Customer ${decodeURIComponent(customerMatch[1])}` };
 
   return null;
 }
