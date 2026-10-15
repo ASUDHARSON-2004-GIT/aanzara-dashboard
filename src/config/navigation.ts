@@ -49,7 +49,6 @@ export const navigation: NavItem[] = [
 const otherPlannedPages = [
   { href: "/catalog/products", title: "Products" },
   { href: "/catalog/products/new", title: "Add Product" },
-  { href: "/offers/new", title: "Create Offer" },
   { href: "/customers/new", title: "Add Customer" },
   { href: "/profile", title: "My Profile" },
   { href: "/store", title: "Store" },

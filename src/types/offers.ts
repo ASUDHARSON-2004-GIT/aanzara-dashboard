@@ -87,3 +87,44 @@ export interface OfferSchedule {
   windowDays: number;
   events: OfferEvent[]; // soonest first
 }
+
+/** What the Create Offer form sends. null means the box was left blank or was not a number. */
+export interface OfferInput {
+  code: string;
+  description: string;
+  type: OfferType;
+  value: number | null;
+  minOrder: number | null;
+  maxDiscount: number | null;
+  usageLimit: number | null;
+  startsAt: string; // ISO date
+  expiresAt: string; // ISO date
+  enabled: boolean;
+}
+
+export type OfferField =
+  | "code"
+  | "description"
+  | "type"
+  | "value"
+  | "minOrder"
+  | "maxDiscount"
+  | "usageLimit"
+  | "startsAt"
+  | "expiresAt";
+
+export type OfferFieldErrors = Partial<Record<OfferField, string>>;
+
+/** What the API returns after it creates or changes an offer. */
+export interface OfferRef {
+  id: string;
+  code: string;
+  status: OfferStatus;
+}
+
+export type CreateOfferState =
+  | { status: "idle" }
+  | { status: "success"; offer: OfferRef }
+  | { status: "error"; message: string; fieldErrors: OfferFieldErrors };
+
+export type ToggleOfferResult = { ok: true } | { ok: false; message: string };
