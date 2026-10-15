@@ -9,6 +9,7 @@ import Pagination from "../ui/Pagination";
 import { CouponStatusBadge } from "../sales/SalesBadges";
 import CopyCodeButton from "./CopyCodeButton";
 import UsageBar from "./UsageBar";
+import OfferStatusToggle from "./OfferStatusToggle";
 
 /** An active offer ending within this many days is highlighted. */
 const ENDING_SOON_DAYS = 7;
@@ -36,7 +37,7 @@ export default function OffersTable({ list, query }: { list: OfferList; query: O
     <>
       {/* The wrapper scrolls sideways on small screens instead of breaking the layout */}
       <div className="-mx-5 overflow-x-auto px-5">
-        <table className="w-full min-w-[980px] text-left text-sm">
+        <table className="w-full min-w-[1040px] text-left text-sm">
           <thead>
             <tr className="bg-gray-50 text-xs text-gray-500">
               <th className="rounded-l-lg px-2.5 py-2 font-medium">Offer</th>
@@ -44,7 +45,8 @@ export default function OffersTable({ list, query }: { list: OfferList; query: O
               <th className="px-2.5 py-2 font-medium">Usage</th>
               <th className="px-2.5 py-2 font-medium">Validity</th>
               <th className="px-2.5 py-2 font-medium">Status</th>
-              <th className="rounded-r-lg px-2.5 py-2 font-medium">Performance</th>
+              <th className="px-2.5 py-2 font-medium">Performance</th>
+              <th className="rounded-r-lg px-2.5 py-2 font-medium">Enabled</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-100">
@@ -101,6 +103,9 @@ export default function OffersTable({ list, query }: { list: OfferList; query: O
                     ) : (
                       <p className="whitespace-nowrap text-xs text-gray-400">No orders yet</p>
                     )}
+                  </td>
+                  <td className="px-2.5 py-3">
+                    <OfferStatusToggle id={offer.id} code={offer.code} status={offer.status} />
                   </td>
                 </tr>
               );

@@ -82,5 +82,19 @@
     "startsAt": "2026-01-01",
     "expiresAt": "2026-12-31",
     "status": "disabled"
+  },
+  {
+    "id": "cp7",
+    "code": "WINTER120",
+    "type": "percentage",
+    "value": 20,
+    "minOrder": 1000,
+    "maxDiscount": 200,
+    "description": "Winter sale 20% off for all jacket",
+    "usageLimit": 500,
+    "usedCount": 0,
+    "startsAt": "2026-11-01",
+    "expiresAt": "2026-12-31",
+    "status": "active"
   }
 ]
