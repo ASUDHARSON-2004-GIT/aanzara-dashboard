@@ -4,8 +4,7 @@
  * Server Components, so secrets/tokens never reach the browser bundle.
  */
 
-const API_BASE_URL =
-  process.env.API_BASE_URL ?? `http://localhost:${process.env.PORT ?? 3000}/api`;
+const API_BASE_URL = `http://localhost:${process.env.PORT ?? 3000}/api`;
 
 const REQUEST_TIMEOUT_MS = 8000;
 
